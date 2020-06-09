@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo3.mapper.ParkConfigMapper">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.example.demo3.entity.ParkConfig">
+        <id column="ID" property="id" />
+        <result column="AppName" property="AppName" />
+        <result column="AppKey" property="AppKey" />
+        <result column="ParkKey" property="ParkKey" />
+        <result column="ParkName" property="ParkName" />
+        <result column="ParkNo" property="ParkNo" />
+        <result column="ParkBusscd" property="ParkBusscd" />
+        <result column="PayKey" property="PayKey" />
+        <result column="PayMacId" property="PayMacId" />
+        <result column="CreateTime" property="CreateTime" />
+        <result column="IsOpen" property="IsOpen" />
+        <result column="PlatForm" property="PlatForm" />
+        <result column="IsOpenUpark" property="IsOpenUpark" />
+        <result column="TimeOut" property="TimeOut" />
+        <result column="AppSecret" property="AppSecret" />
+        <result column="AppID" property="AppID" />
+        <result column="Md5Key" property="Md5Key" />
+        <result column="WeChatBannerUrl" property="WeChatBannerUrl" />
+        <result column="IsFixedCode" property="IsFixedCode" />
+        <result column="IsTicket" property="IsTicket" />
+        <result column="DutyNo" property="DutyNo" />
+        <result column="TxtCode" property="TxtCode" />
+    </resultMap>
+    <select id="selectPageVo" resultType="com.example.demo3.entity.ParkConfig">
+    SELECT * FROM ParkConfig
+</select>
+</mapper>
